@@ -1,14 +1,14 @@
-## Docker TD
+## TP FINAL BIGDATA
 
 Résultat du TP Final de BigData réalisé par Kévin Barbin.
 
 # Lancement
 
 Effectuer les étapes dans cet ordre :
-
+Faire un `git clone` du repository `https://github.com/Lingatsu/TpBigData.git`
 `docker-compose up` ou `docker compose up`
 
-Ouvrir un autre onglet du temrinal et faire :
+Ouvrir un autre onglet du terminal et faire :
 
 `sudo docker exec -it hadoop-master bash`
 `/usr/local/hadoop/bin/hdfs namenode -format`
