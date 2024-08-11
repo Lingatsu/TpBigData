@@ -10,7 +10,6 @@ Ensuite  :
 `docker-compose up` ou `docker compose up`  
 
 Ouvrir un autre onglet du terminal et faire :  
-
 `sudo docker exec -it hadoop-master bash`  
 `/usr/local/hadoop/bin/hdfs namenode -format`  
 `./start-hadoop.sh`  
