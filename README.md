@@ -15,6 +15,7 @@ Ouvrir un autre onglet du terminal et faire :
 `./start-hadoop.sh`  
 `jps` pour vérifier que Jps, DataNode, NameNode, SecondaryNameNode, ResourceManager, NodeManager sont lancés  
 
+Création du repertoire dans hdfs pour y transferer les fichiers de données :  
 `hdfs dfs -mkdir -p /user/root/input/`  
 `hdfs dfs -put /root/hdfs-input/* /user/root/input/`  
 
