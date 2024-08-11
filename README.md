@@ -4,31 +4,32 @@ Résultat du TP Final de BigData réalisé par Kévin Barbin.
 
 # Lancement
 
-Effectuer les étapes dans cet ordre :
-Faire un `git clone` du repository `https://github.com/Lingatsu/TpBigData.git`
-`docker-compose up` ou `docker compose up`
+Effectuer les étapes dans cet ordre :  
+Faire un `git clone` du repository `https://github.com/Lingatsu/TpBigData.git`  
+Ensuite  :
+`docker-compose up` ou `docker compose up`  
 
-Ouvrir un autre onglet du terminal et faire :
+Ouvrir un autre onglet du terminal et faire :  
 
-`sudo docker exec -it hadoop-master bash`
-`/usr/local/hadoop/bin/hdfs namenode -format`
-`./start-hadoop.sh`
-`jps` pour vérifier que Jps, DataNode, NameNode, SecondaryNameNode, ResourceManager, NodeManager sont lancés
+`sudo docker exec -it hadoop-master bash`  
+`/usr/local/hadoop/bin/hdfs namenode -format`  
+`./start-hadoop.sh`  
+`jps` pour vérifier que Jps, DataNode, NameNode, SecondaryNameNode, ResourceManager, NodeManager sont lancés  
 
-`hdfs dfs -mkdir -p /user/root/input/`
-`hdfs dfs -put /root/hdfs-input/* /user/root/input/`
+`hdfs dfs -mkdir -p /user/root/input/`  
+`hdfs dfs -put /root/hdfs-input/* /user/root/input/`  
 
-Pour lancer l'exercice 1
-`spark-submit --deploy-mode client --master local[2] ./scripts/Exercice1.py input/arbresremarquablesparis2.csv`
+Pour lancer l'exercice 1  
+`spark-submit --deploy-mode client --master local[2] ./scripts/Exercice1.py input/arbresremarquablesparis2.csv`  
 
-Pour lancer l'exercice 2
-`pip install prettytable`
-`spark-submit --deploy-mode client --master local[2] ./scripts/Exercice2.py input/`
+Pour lancer l'exercice 2  
+`pip install prettytable`  
+`spark-submit --deploy-mode client --master local[2] ./scripts/Exercice2.py input/`  
 
 # Docker hub
 
-Image sur docker hub afin de relancer la configuration:
-[lingatsu/tp-final-bigdata](https://hub.docker.com/r/lingatsu/tp-final-bigdata)
+Image sur docker hub afin de relancer la configuration:  
+[lingatsu/tp-final-bigdata](https://hub.docker.com/r/lingatsu/tp-final-bigdata)  
 
 # Résultat Final
 
